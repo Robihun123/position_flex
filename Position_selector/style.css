@@ -1,0 +1,99 @@
+body{
+    background-color: antiquewhite;
+    margin: 0;
+
+}
+
+header {
+    text-align: center;
+    padding: 0rem;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    margin: 0;
+    height: 5rem;
+    padding: 0;
+
+}
+nav ul li {
+    display: inline;
+    justify-content: center;
+    margin: 5rem;
+    font-size: x-large;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a :hover{
+    color: red;
+}
+main{
+    margin: 1rem;
+}
+.cards{
+    margin-top: 2rem;
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+
+}
+.card{
+    border-style: solid;
+    width: 30%;
+    padding: 0.75rem;
+    background-color: chocolate;
+    margin: 0;
+}
+.card:first-child{
+    position: relative;
+}
+.card:first-child button{
+    background-color: rgba(100, 100, 100, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: scale .2s;
+
+}
+.card:nth-child(2){
+    position: relative;
+    z-index: -1;
+}
+.card:nth-child(2) #circle{
+    border-radius: 50%;
+    width: 25%;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: -1;
+    
+}
+.card:nth-child(2) div{
+    opacity:  .5;
+}
+button:active{
+    scale: .8;
+    background-color: burlywood;
+}
+div{
+    border-style: solid;
+    padding-top: -1rem;
+    padding: 0.5rem;
+    background-color: bisque;
+}
+img{
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+
+footer{
+    margin: 1rem;
+}
